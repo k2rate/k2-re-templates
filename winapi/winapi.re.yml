@@ -1,0 +1,4 @@
+platform.windows:
+  cxx-link-deps:
+    - "user32.lib"
+    - "Advapi32.lib"

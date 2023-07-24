@@ -1,0 +1,18 @@
+type: static-library
+
+name: directx11
+version: 11
+
+cxx-include-dirs:
+    - "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/um"
+    - "C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Include"
+
+cxx-lib-dirs:
+    - "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.19041.0/um/${arch}"
+    - "C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/${arch}"
+
+cxx-link-deps:
+    - d3d11.lib
+    - d3dx11.lib
+    - dxgi.lib
+    - d3dcompiler.lib
